@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 3, 2020, 8:08:00 PM
+    Author     : dilbd
+*/
+
+/* Heade background*/
+#example1 {
+    border: 2px solid black;
+    padding: 20px;
+    background: url(Pouring1.jpg);
+    background-repeat: no-repeat;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 600px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+img {
+    border: 5px solid #555;
+}
+/* Nav bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #ccccb3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color:#333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+/*Main content */
+article {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 1em;
+    overflow: hidden;
+}
+
+/*Footer */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
